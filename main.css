@@ -12,12 +12,15 @@ div {
 }
 
 #selectedPredictions {
+  margin-top: 20px;
+  margin-left: 50px;
   text-align: left;
   height: 400px;
   width: 500px;
 }
 
 #lossplot1 { 
+  margin-left: 50px;
   height: 700px;
   width: 160px;
 } 
@@ -27,13 +30,14 @@ div {
   width: 160px;
 }
 
-#paralleChart {
+/*#paralleChart {
+  margin-right: 50px;
   height: 600px;
   width: 500px;
   background: pink;
 }
-
-#div1 {
+*/
+/*#div1 {
   background: white;
 }
 
@@ -47,12 +51,13 @@ div {
 
 #div4 {
   background: white;
-}
+}*/
+
 .row {
   display: flex;
 }
 
-.column {
+/*.column {
   flex: 50%;
 }
 
@@ -60,13 +65,13 @@ div {
   position: absolute;
   bottom: 50%;
   right: 0;
-}
+}*/
 
 #learningRate1 {
   justify-content: start
 }
 
-#sidebar {
+/*#sidebar {
   height: 100%;
   width: 200px;
   position: fixed;
@@ -103,19 +108,21 @@ a.anchor {
 
 .button-a {
   text-decoration: none;
-}
+}*/
 
 .center {
-  margin: auto;
-  width: 100%;
+  margin-left: 50px;
+/*  margin: auto;*/
+  width: 90%;
   height: 40px;
   border: 1px solid orange;
   padding: 10px;
 }
 
 .centerAlot {
+  margin-left: 50px;
 /*  margin: auto;*/
-  width: 100%;
+  width: 90%;
   height: 40px;
   border: 1px solid green;
   padding: 9px;
@@ -126,19 +133,20 @@ a.anchor {
   display: flex;
 }
 
-#sidebar a {
+/*#sidebar a {
   display: block;
   padding: 8px;
   text-decoration: none;
   padding-right: 73px;
   text-align: right;
-}
+}*/
 
 #parallelPlot {
-  width: 800px;
+/*  margin-right: 50px;*/
+  width: 1000px;
 }
 
-#wrapper {
+/*#wrapper {
   margin-left: 180px;
 }
 
@@ -156,14 +164,14 @@ a.anchor {
 .allsortsof {
   width: 500px;
 }
-
+*/
 .viewof {
   margin-right: 20px;
   font-size: 14px;
   border-left: 10px solid orange;
 }
 
-.chart {
+./*chart {
   max-height: 85%; 
   max-width: 90%;
   font-size: 21px;
@@ -180,4 +188,4 @@ a.anchor {
 .smallfont {
   font-size: 16px;
   font-weight: bold;
-}
+}*/
