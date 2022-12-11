@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  	<title>32 Years of IEEE VIS</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <div class="center"> 
+      <div class="row">
+      <div id="learningRate1" class="viewof column"></div>
+      <div id="activation1" class="viewof column"></div>
+      <div id="epoch1" class="viewof column"></div>
+      <div id="trainButton1" class="viewof column"></div>
+    </div>
+    </div>
+
+    <div class="center">  
+      <div class="row">
+      <div id="learningRate2" class="viewof column"></div>
+      <div id="activation2" class="viewof column"></div>
+      <div id="epoch2" class="viewof column"></div>
+      <div id="trainButton2" class="viewof column"></div>
+    </div>
+    </div>
+
+    <div class="row">   
+      <div id='lossplot1'></div>
+    </div>
+
+    <div class="row">   
+      <div id='lossplot2'></div>
+    </div>
+
+    <div class="centerAlot"> 
+      <div class="row">
+      <div id="age" class="viewof column"></div>
+      <div id="year" class="viewof column"></div>
+      <div id="edu" class="viewof column"></div>
+    </div>
+    </div>
+
+    <div class="centerAlot"> 
+      <div class="row">
+      <div id="gender" class="viewof column"></div>
+      <div id="race" class="viewof column"></div>
+      <div id="salary" class="viewof column"></div>
+    </div>
+    </div>
+
+    <div class="centerAlot"> 
+      <div class="row">
+      <div id="metro" class="viewof column"></div>
+      <div id="ageYoungestChild" class="viewof column"></div>
+      <div id="dayOfWeek" class="viewof column"></div>
+    </div>
+    </div>
+
+    <div class="centerAlot"> 
+      <div class="row">
+      <div id="partner" class="viewof column"></div>
+      <div id="employment" class="viewof column"></div>
+      <div id="jobType" class="viewof column"></div>
+    </div>
+    </div>
+
+    <div class="centerAlot"> 
+      <div class="row">
+      <div id="numChildren" class="viewof column"></div>
+    </div>
+    </div>
+
+    <div class="centerAlot"> 
+      <div class="row">
+      <div id="schemec" class="viewof column"></div>
+      <div id="numberTicks" class="viewof column"></div>
+    </div>
+    </div>
+
+    <div class="row">
+      <div id = "selectedPredictions"></div>
+    </div>
+
+    <div class="row"> 
+      <div id = 'parallelPlot'></div>
+    </div>
+  	
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+
+      import notebook from "https://api.observablehq.com/@hongtaoh/tensorflow-neural-network-new.js?v=3"; 
+      const renders = {
+        "viewof activation1": "#activation1",
+        "viewof learningRate1": "#learningRate1",
+        "viewof epoch1": "#epoch1",
+        "viewof activation2": "#activation2",
+        "viewof learningRate2": "#learningRate2",
+        "viewof epoch2": "#epoch2",
+        "trainButton": "#trainButton1",
+        "trainButton2": "#trainButton2",
+        "viewof selectedPredictions": "#selectedPredictions",
+        "trainLossPlot1": "#lossplot1",
+        "trainLossPlot2": "#lossplot2",
+        "viewof predButton": "#predButton",
+        "parallelPlot": "#parallelPlot",
+        "viewof age": "#age",
+        "viewof year": "#year",
+        "viewof edu": "#edu",
+        "viewof gender": "#gender",
+        "viewof race": "#race",
+        "viewof salary": "#salary",
+        "viewof metro": "#metro",
+        "viewof ageYoungestChild": "#ageYoungestChild",
+        "viewof dayOfWeek": "#dayOfWeek",
+        "viewof partner": "#partner",
+        "viewof employment": "#employment",
+        "viewof jobType": "#jobType",
+        "viewof numChildren": "#numChildren",
+        "viewof schemec": "#schemec",
+        "viewof numberTicks": "#numberTicks",
+      }
+
+      const runtime = new Runtime();
+      const main = runtime.module(notebook, name => {
+         const selector = renders[name];
+          if (selector) {
+              return new Inspector(document.querySelector(selector));
+          } else {
+              return true;
+          }
+      });
+
+    </script>
+  </body>
+</html>

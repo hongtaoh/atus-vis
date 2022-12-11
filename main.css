@@ -1,0 +1,183 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+#selectedPredictions {
+  text-align: left;
+  height: 400px;
+  width: 500px;
+}
+
+#lossplot1 { 
+  height: 800px;
+  width: 160px;
+} 
+
+#lossplot2 {
+  height: 800px;
+  width: 160px;
+}
+
+#paralleChart {
+  height: 600px;
+  width: 500px;
+  background: pink;
+}
+
+#div1 {
+  background: white;
+}
+
+#div2 {
+  background: white;
+}
+
+#div3 {
+  background: white;
+}
+
+#div4 {
+  background: white;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+}
+
+#learningRate1 {
+  justify-content: start
+}
+
+#sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  left:0;
+  overflow-x: hidden;
+  background-image: url("32vis.png");
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position: 0px 30px; 
+  text-align: left;
+  line-height: 40px;
+}
+
+.button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+}
+
+.button-a {
+  text-decoration: none;
+}
+
+.center {
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  border: 1px solid orange;
+  padding: 10px;
+}
+
+.centerAlot {
+/*  margin: auto;*/
+  width: 100%;
+  height: 40px;
+  border: 1px solid green;
+  padding: 9px;
+/*  text-align: center*/
+}
+
+.rowAlot {
+  display: flex;
+}
+
+#sidebar a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  padding-right: 73px;
+  text-align: right;
+}
+
+#parallelPlot {
+  width: 800px;
+}
+
+#wrapper {
+  margin-left: 180px;
+}
+
+#wrapper {
+}
+#chart {
+}
+#trends-viz {
+}
+#sankey-viz{
+}
+#co-occur-viz{
+}
+
+.allsortsof {
+  width: 500px;
+}
+
+.viewof {
+  margin-right: 20px;
+  font-size: 14px;
+  border-left: 10px solid orange;
+}
+
+.chart {
+  max-height: 85%; 
+  max-width: 90%;
+  font-size: 21px;
+}
+
+.leftMargin {
+  margin-left: 10px;
+}
+
+#explanation {
+  width: 90%
+}
+
+.smallfont {
+  font-size: 16px;
+  font-weight: bold;
+}
